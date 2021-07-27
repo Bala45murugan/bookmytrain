@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <title>Admin</title>
+</head>
+
+<body>
+  <div>
+    <header class="font-bold">
+      <h3>Ticket booking</h3>
+    </header>
+    <div class="table-wrapper">
+      <table class="nameDetails table table-striped">
+        <tr>
+          <th>Fullname</th>
+          <th>Phone</th>
+          <th>from</th>
+          <th>to</th>
+          <th>class</th>
+          <th>date</th>
+        </tr>
+      </table>
+      <button type="button" class="btn btn-primary addButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+        User</button>
+    </div>
+    <div class="modal fade addUsers" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Users</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" autocomplete="off">
+              <input type="text" name="firstName" placeholder="First Name">
+              <input type="text" name="lastName" placeholder="Last Name">
+              <input type="number" name="phone" placeholder="Phone">
+              <input type="text" name="from" placeholder="from">
+              <input type="text" name="to" placeholder="to">
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button class="btn btn-modal btn-primary">Confirm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Edit Modal -->
+      <!-- <div class="editUsers">
+        <div class="modal">
+          <div class="modal-header">
+            <h3>Edit User</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form" autocomplete="off">
+              <input type="text" name="firstName" placeholder="First Name">
+              <input type="text" name="lastName" placeholder="Last Name">
+              <input type="number" name="phone" placeholder="Phone">
+              <input type="email" name="email" placeholder="Email">
+              <button class="btn btn-modal">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+   
+<script src="./adscript.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+
+  
+</body>
+
+</html>

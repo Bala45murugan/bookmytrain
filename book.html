@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="main.css" type="text/css"> -->
+        <title>Ticket Booking</title>
+        <style>
+            .container{
+                padding:2px 16px;padding-top: 150px;
+            }
+            label{
+                width: 150px; 
+            }
+            input,select{
+                width:250px;height: 30px;background-color:beige;
+            }
+            h1{
+                color: blue;text-shadow:darkorange 2px 0 10px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 50pxpx;
+            }
+            ul{
+                list-style-type: none;
+                overflow: hidden;
+                padding:0;margin:0;
+                background-color: #333;
+            }
+            li{
+                float: right;
+            }
+            li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: #111;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightgray">
+        
+        <nav>
+            <ul>
+              <header class="font-bold">
+                <h3 style="color: rgb(69, 207, 241); position: absolute; padding-top:2px; padding-left: 10px;">
+                  TICKET BOOKING</h3>
+              </header>
+              <div>
+                <li><a href="../../contact.html" style="color: white">Contact Us</a></li>
+                <li><a href="../../enquire.html" style="color: white">Enquiry</a></li>
+                <li><a href="../../book.html" style="color: white">Ticket Booking</a></li>
+                <li><a href="../../index.html" style="color: white">Home</a></li>
+              </div>
+            </ul>
+          </nav>
+        <div class="container" style="padding-left: 330px; width:620px;">
+            
+        <!-- <label>Name:</label><br>
+        <input id="name1" type="text" name="name1" value="" placeholder="Enter your name " /><br><br>
+        <label>From:</label><br>
+        <select id="from">
+            <option value="thiruvarur">Thiruvarur</option>
+            <option value="thiruvarur">Thanjavur</option>
+            <option>Coimbatore</option>
+            <option>Chennai</option>
+        </select><br><br>
+        <label>To:</label><br>
+        <select id="to">
+            <option value="thiruvarur">Thiruvarur</option>
+            <option value="thanjavur">Thanjavur</option>
+            <option value="coimbatore">Coimbatore</option>
+            <option value="chennai">Chennai</option>
+        </select><br><br>
+        <label>Coach:</label><br>
+        <select id="class">
+            <option value="AC class tier">AC class tier</option>
+            <option value="sleeper">Sleeper</option>
+            <option value="class a">Class A</option>
+            <option value="class b">Class B</option>
+        </select><br><br>
+        <label>Date:</label><br>
+        <input type="date" id="date">
+        <br><br> -->
+        <h2 style="color: red">ATTENTION</h2>
+        <p>Indian Railways has cancelled a host of trains from May 9,
+         Sunday amid the surge in coronavirus cases across the country.
+          28 pairs of long-distance special train services have been cancelled by the authorities of the Indian Railways.</p><br><br>
+          <h6 style="color:red;">NOTE:</h6>
+        <p>Once you book ticket,you will not able to cancel the ticket.If any emergency,Contact us to cancel your ticket.</p>
+        <a href="./trainDB/ticketbooking/index.html">
+    <button style="font-size:20px;background-color:rgb(139, 221, 139);border-radius:12px;width:180px;height:50px;" type="submit" onClick="paid()">
+        see avaliable trains
+    </button>
+</a>
+</div>
+<p id="demo"></p>
+<!-- <script>
+    function paid()
+    {
+        var name=document.getElementById("name1").value;
+        var from=document.getElementById("from");
+        var to=document.getElementById("to");
+        var coach=document.getElementById("class");
+        var date=document.getElementById("date");
+        document.getElementById("demo").innerHTML="Name:"+ name;
+        console.log(name1)
+    }
+</script> -->
+</body>
+</html>
